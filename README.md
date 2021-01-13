@@ -1,7 +1,7 @@
 # Self-Adaptively Learning to Demoire from Focused and Defocused Image Pairs(NIPS'20)
 Lin Liu, Shanxin Yuan, Jianzhuang Liu, Liping Bao, Gregory Slabaugh, Qi Tian
 
-[[\[Arxiv\]](https://arxiv.org/abs/2011.02055) 
+[\[Arxiv\]](https://arxiv.org/abs/2011.02055) 
 
 ## Abstract
 Moiré artifacts are common in digital photography, resulting from the interference between high-frequency scene content and the color filter array of the camera. Existing deep 
