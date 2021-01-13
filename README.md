@@ -1,6 +1,5 @@
 # Self-Adaptively Learning to Demoire from Focused and Defocused Image Pairs
-[Tianyu Wang](https://stevewongv.github.io)\*, Xin Yang\*, Ke Xu, Shaozhe Chen, Qiang Zhang, [Rynson W.H. Lau](http://www.cs.cityu.edu.hk/~rynson/) † 
-(\* Joint first author. † Rynson Lau is the corresponding author.)
+Lin Liu, Shanxin Yuan, Jianzhuang Liu, Liping Bao, Gregory Slabaugh, Qi Tian
 
 [\[Project Page\]](https://stevewongv.github.io/derain-project.html) [\[Arxiv\]](https://arxiv.org/abs/1904.01538) 
 
