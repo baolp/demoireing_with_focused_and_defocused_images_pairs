@@ -1,20 +1,28 @@
-# Self-Adaptively Learning to Demoire from Focused and Defocused Image Pairs
+# Self-Adaptively Learning to Demoir{\'e} from Focused and Defocused Image Pairs(NIPS'20)
 Lin Liu, Shanxin Yuan, Jianzhuang Liu, Liping Bao, Gregory Slabaugh, Qi Tian
 
-[\[Project Page\]](https://stevewongv.github.io/derain-project.html) [\[Arxiv\]](https://arxiv.org/abs/1904.01538) 
+[[\[Arxiv\]](https://arxiv.org/abs/2011.02055) 
 
 ## Abstract
-Removing rain streaks from a single image has been drawing considerable attention as rain streaks can severely degrade the image quality and affect the performance of existing outdoor vision tasks. While recent CNN-based derainers have reported promising performances, deraining remains an open problem for two reasons. First, existing synthesized rain datasets have only limited realism, in terms of modeling real rain characteristics such as rain shape, direction and intensity. Second, there are no public benchmarks for quantitative comparisons on real rain images, which makes the current evaluation less objective. The core challenge is that real world rain/clean image pairs cannot be captured at the same time. In this paper, we address the single image rain removal problem in two ways. First, we propose a semi-automatic method that incorporates temporal priors and human supervision to generate a high-quality clean image from each input sequence of real rain images. Using this method, we construct a large-scale dataset of ∼29.5K rain/rain-free image pairs that cover a wide range of natural rain scenes. Second, to better cover the stochastic distributions of real rain streaks, we propose a novel SPatial Attentive Network (SPANet) to remove rain streaks in a local-to-global manner. Extensive experiments demonstrate that our network performs favorably against the state-of-the-art deraining methods.
+Moiré artifacts are common in digital photography, resulting from the interference between high-frequency scene content and the color filter array of the camera. Existing deep 
+learning-based demoiréing methods trained on large scale datasets are limited in handling various complex moiré patterns, and mainly focus on demoiréing of photos taken of 
+digital displays. Moreover, obtaining moiré-free ground-truth in natural scenes is difficult but needed for training. In this paper, we propose a self-adaptive learning method 
+for demoiréing a high-frequency image, with the help of an additional defocused moiré-free blur image. Given an image degraded with moiré artifacts and a moiré-free blur image, 
+our network predicts a moiré-free clean image and a blur kernel with a self-adaptive strategy that does not require an explicit training stage, instead performing test-time 
+adaptation. Our model has two sub-networks and works iteratively. During each iteration, one sub-network takes the moiré image as input, removing moiré patterns and restoring 
+image details, and the other sub-network estimates the blur kernel from the blur image. The two sub-networks are jointly optimized. Extensive experiments demonstrate that our 
+method outperforms state-of-the-art methods and can produce high-quality demoiréd results. It can generalize well to the task of removing moiré artifacts caused by display 
+screens. In addition, we build a new moiré dataset, including images with screen and texture moiré artifacts. As far as we know, this is the first dataset with real texture moiré 
+patterns.
 
 ## Citation
-If you use this code or our dataset(including test set), please cite:
+If you use this code, please cite:
 
 ```
-@InProceedings{Wang_2019_CVPR,
-  author = {Wang, Tianyu and Yang, Xin and Xu, Ke and Chen, Shaozhe and Zhang, Qiang and Lau, Rynson W.H.},
-  title = {Spatial Attentive Single-Image Deraining with a High Quality Real Rain Dataset},
-  booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-  month = {June},
-  year = {2019}
+@article{liu2020self,
+  title={Self-Adaptively Learning to Demoir{\'e} from Focused and Defocused Image Pairs},
+  author={Liu, Lin and Yuan, Shanxin and Liu, Jianzhuang and Bao, Liping and Slabaugh, Gregory and Tian, Qi},
+  journal={arXiv preprint arXiv:2011.02055},
+  year={2020}
 }
 ```
